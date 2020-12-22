@@ -1,0 +1,318 @@
+/** Глобальные стили **/
+
+Html {
+    font-size: 19px;
+}
+
+@font-face {
+    font-family: 'OCR-B 10 BT';
+    src: url(fonts/OCR-B0BTRegular.ttf);
+   }
+
+body{
+   padding: 0;
+   margin: 0;
+    
+    font-family: Ubuntu, sans-serif;
+    
+    text-transform: uppercase;
+    color: #fafae5;
+    font-weight: bold;
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+p, h1, h2, ul {
+    margin: 0;
+}
+
+
+
+/** Шапка **/
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+#header-bar {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#header-bar a:hover,
+    #logo a:hover {
+    color: #fff;
+}
+
+#logo {
+    flex-grow: 1;
+    
+    
+    
+}
+
+#logo a {
+    color: #782272;
+    align-items: center;
+    font-family: 'OCR-B 10 BT', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    
+}
+
+#nav-bar{
+    flex-grow: 2;
+}
+
+
+#nav-bar ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    color: #1d3d79;
+}
+
+.nav-link a {
+    color: #1d3d79;
+}
+
+/** Первый блок **/
+
+#block1 {
+    background: #221622 url(media/Images/back_1.jpg) no-repeat 100% 100% / cover;
+    min-height: 100vh;
+    padding-top: 5rem;
+    box-sizing: border-box;
+    
+}
+
+.block1__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    min-height: 80%;
+    align-items: center;
+}
+
+.block1__name {
+    grid-area: 1/1/2/3;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.block1__h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    grid-area: 2/1/3/2;
+    align-self: flex-start;
+}
+
+.block1__text {
+    display: inline-block;
+    max-width: 400px;
+    grid-area: 3/1/4/2;
+}
+
+
+.books-name {
+    color: #1d3d79;
+    font-size: 4.95rem;
+    line-height: 1;
+}
+
+.block1__image {
+    align-items: flex-end;
+    max-width: 35rem;
+    width: 100%;
+    height: auto;
+    grid-area: 2/2/4/3;
+    align-self: flex-end;
+    justify-self: end;
+}
+
+
+
+
+
+/** Второй блок **/
+
+#block2 {
+    background-color: #1d3d79;
+}
+
+.block2__flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2.5rem 2rem 5rem 0;
+    
+}
+
+.block2__image {
+    display: block;
+    max-width: 552px;
+    height: auto;
+    
+}
+
+.abbaba {
+    
+   
+    margin-right: 2.5rem;
+}
+
+.block2__text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    color: #addceb;
+}
+
+
+
+
+/** Третий блок **/
+
+
+#block3 {
+    background: #221622 url(media/Images/back_2.jpg) no-repeat 100% 100% / cover;
+
+}
+
+.block3__flexbox {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    padding-top: 4rem;
+    position: relative;
+}
+
+.block3__text {
+    font-size: 2.8rem;
+    line-height: 2;
+    align-self: flex-end;
+    margin-bottom: 15rem;
+}
+
+.pink_text {
+    color: #dbb0c0;
+    
+}
+
+.blue-text {
+    color: #1d3d79;
+}
+
+.block3__name {
+    margin-bottom: 3rem;
+}
+
+.block3__image {
+    position: absolute; 
+    max-width: 85%;
+    height: auto;
+    top: 10rem;
+    left: -12rem;;
+}
+
+
+/** Четвертый блок **/
+
+
+#block4 {
+    background-color: #1d3d79;
+    
+}
+
+.block4__flexbox {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 2.9rem;
+    position: relative;
+}
+
+.block4__h2 {
+    color: #addceb;
+    font-size: 1.6rem;
+    margin-bottom: 3.5rem;
+}
+
+.violet-text {
+    color: #782272;
+}
+
+.block4__text {
+    color: #addceb;
+    width: 50%;
+    margin-bottom: 7.7rem;
+}
+
+.block4__image {
+    position: absolute;
+    max-width: 60%;
+    height: auto;
+    right: -3rem;
+    top: -3.5rem;
+}
+
+
+/** Подвал **/
+
+footer {
+    background-color: #1d3d79;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer__author,
+.footer__mail {
+    display: flex;
+    flex-flow: row nowrap;
+    color: #fff;
+    list-style: none;
+    font-family: 'OCR-B 10 BT', sans-serif;
+    font-weight: normal;
+    padding-left: 0;
+}
+
+.footer__author li,
+.footer__mail li {
+    margin-right: 0.7rem;
+}
+
+.light-blue-text,
+.mail {
+    color: #addceb;
+}
+
+.mail {
+    text-decoration: none;
+    
+}
+
+.mail:hover {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+
+
+
